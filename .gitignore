@@ -32,11 +32,7 @@ pgdata/
 *.swo
 *~
 .DS_Store
-stack1.ipynb
-stack2.ipynb
-stack3.ipynb
-stack4.ipynb
-stack5.ipynb
+stacks
 .env.ipynb
 pydantic.ipynb
 
