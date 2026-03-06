@@ -11,17 +11,17 @@ Um simulador interativo de estratégias de corrida de Fórmula 1 em tempo real, 
 ## Features
 
 ### Core Features (MVP)
-1º - Motor de simulação de corrida com física realista
-2º - Cálculo de degradação de pneus (5 compostos)
-3º - Simulação de consumo de combustível
-4º - Comparação de múltiplas estratégias
-5º - Visualização em tempo real
-6º - Cálculo de undercut/overcut
+- 1º: Motor de simulação de corrida com física realista
+- 2º: Cálculo de degradação de pneus (5 compostos)
+- 3º: Simulação de consumo de combustível
+- 4º: Comparação de múltiplas estratégias
+- 5º: Visualização em tempo real
+- 6º: Cálculo de undercut/overcut
 
 ## Stack Técnica de Planejamento
 
 ### Backend
-- **Framework:** FastAPI (Python 3.11+)
+- **Framework:** FastAPI (Python 3.12+)
 - **Banco de Dados:** PostgreSQL 15+
 - **ORM:** SQLAlchemy 2.0
 - **Migrations:** Alembic
@@ -124,7 +124,7 @@ Contribuições são bem-vindas! Por favor:
 ## Roadmap Atual
 
 - [x] Setup inicial do projeto
-- [ ] Motor de simulação básico
+- [x] Motor de simulação básico
 - [ ] API REST completa
 - [ ] Interface React funcional
 - [ ] WebSockets para tempo real
