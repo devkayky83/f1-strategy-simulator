@@ -12,6 +12,7 @@ class Settings(BaseSettings):
     APP_NAME: str = "F1 Strategy Simulator"
     APP_VERSION: str = "1.0.0"
     DEBUG: bool = False
+    ENVIRONMENT: str = "development"
     
     # Servidor
     HOST: str = "0.0.0.0"
