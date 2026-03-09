@@ -104,6 +104,16 @@ docker-compose up -d
 # API Docs: http://localhost:8000/docs
 ```
 
+### 5. Demo (Caso deseje)
+
+```bash
+## Na raiz do projeto
+cd backend
+
+# Acessar demo
+python demo_simulator.py
+```
+
 ## Documentação da API
 
 Após iniciar o backend, acesse:

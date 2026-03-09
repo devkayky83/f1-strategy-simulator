@@ -58,9 +58,9 @@ class RaceSimulationEngine:
         self.pit_stops_completed = []
         self.lap_results: List[LapResult] = []
         
-        self.planned_pit_stops = self._parse_pit_stops()
+        self.planned_pit_stops = self.planned_pit_stops()
         
-    
+
     def planned_pit_stops(self) -> List[Dict]:
         # Extrai e ordena pit stops da estratégia
         
@@ -238,7 +238,7 @@ class RaceSimulationEngine:
         print(f"\n1. Iniciando simulação: {self.strategy.name}")
         print(f"- Circuito: {self.circuit.name}")
         print(f"- Voltas: {self.circuit.total_laps}")
-        print(f"- Pit Stops planejados: {len(self.planned_pit_stops)}")
+        print(f"- Pit Stops planejados: {len(self.planned_pit_stops)}\n")
         
         # Resetar estado
         self.lap_results = []
@@ -302,13 +302,13 @@ class RaceSimulationEngine:
         }
         
         print(f"\n{'='*60}")
-        print(f"2. RESULTADOS DA SIMULAÇÃO")
+        print(f" 2. RESULTADOS DA SIMULAÇÃO")
         print(f"{'='*60}")
         print(f"- Tempo Total: {formatted_time}")
         print(f"- Tempo Médio: {average_lap:.3f}s")
         print(f"- Volta mais Rápida: {fastest_lap:.3f}s (Volta {fastest_lap_num})")
         print(f"- Tempo nos Boxes: {total_pit_time:.1f}s ({len(self.pit_stops_completed)} paradas)")
-        print(f" Combustível Usado: {results['fuel_used']:.1f}kg")
+        print(f"- Combustível Usado: {results['fuel_used']:.1f}kg")
         print(f"{'='*60}\n")
         
         return results
